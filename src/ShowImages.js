@@ -1,5 +1,5 @@
 import "./ShowImages.css"
-import { useState } from "react";
+import {useState } from "react";
 
 function ShowImages(props){
     const pets = props.pets;
@@ -22,22 +22,17 @@ function ShowImages(props){
         setImages(foods);
         setCurrent(0);
     }
-
-    function nextSlide(){
-        setCurrent(current === images.length-1? 0:current+1);
-    }
-
-    function prevSlide(){
-        setCurrent(current === 0? images.length-1:current-1);
-    }
-
     
     return (
         <div className="columns">
             <div className="primary">
                 <div className="slider">
-                        <div className="left-arrow" onClick={prevSlide}>⬅</div>
-                        <div className="right-arrow" onClick={nextSlide}>⮕</div>
+                        <div className="left-arrow"
+                        onClick={()=>setCurrent(current===0?images.length-1:current-1)}>
+                        ⬅</div>
+                        <div className="right-arrow"
+                        onClick={()=>setCurrent(current===images.length-1?0:current+1)}>
+                        ⮕</div>
                 </div>
                 <div>
                     {images.map(
@@ -69,7 +64,6 @@ function ShowImages(props){
                     </div>
                 </div>
             </div>
-
             
         </div>
     )
