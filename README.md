@@ -5,3 +5,4 @@ Users can choose image catagory to display in the primary area, and then view th
 
 ## Version 1
 Three types of images: beach, pet, food.
+<img src="public/app-screenshot.PNG" width="500px" alt="my album app" />
