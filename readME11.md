@@ -2,8 +2,9 @@
 
 ## Requirements
 Install PyYAML
-```bash```
+```bash
 pip install PyYAML
+```
 
 ## Contains
 * `cargoApp.py` - The main application file for calculating the needed number of trolleys.
@@ -12,9 +13,10 @@ pip install PyYAML
 
 ## Usage
 To run the cargo loading application, execute the following command:
-```bash```
+```bash
 python cargoApp.py
-
+```
 To execute the unit tests, run:
-```bash```
+```bash
 python cargoAppTest.py
+```
