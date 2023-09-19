@@ -1,7 +1,7 @@
 # Cargo loading application
 
 ## Requirements
-Install PyYAML
+Before using this application, ensure you have PyYAML installed.
 ```bash
 pip install PyYAML
 ```
